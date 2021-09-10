@@ -1,5 +1,5 @@
 import urllib.request,json
-from .models import movie
+from .models import Movie
 
 # Getting api key
 api_key = None
@@ -12,7 +12,7 @@ def configure_request(app):
     api_key = app.config['MOVIE_API_KEY']
     base_url = app.config['MOVIE_API_BASE_URL']
 
-Movie = movie.Movie
+# Movie = Movie.Movie
 
 def get_movies(category):
     '''
